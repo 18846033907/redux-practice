@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.0.1",
     "less": "^3.9.0",
     "path": "^0.12.7",
     "react": "^16.8.4",
@@ -51,22 +52,24 @@
   "devDependencies": {
     "@commitlint/cli": "^7.5.2",
     "@commitlint/config-conventional": "^7.5.0",
-    "cz-conventional-changelog": "^2.1.0",
     "babel-plugin-root-import": "^6.1.0",
     "customize-cra": "^0.2.12",
+    "cz-conventional-changelog": "^2.1.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^4.2.0",
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-prettier": "^3.0.1",
+    "git-cz": "^3.0.1",
     "husky": "^2.1.0",
     "less-loader": "^4.1.0",
     "lint-staged": "^8.1.5",
     "prettier": "^1.17.0",
     "react-app-rewired": "^2.1.1",
+    "react-redux": "^7.0.3",
+    "redux": "^4.0.1",
     "standard-version": "^5.0.2",
     "stylelint": "^10.0.1",
     "stylelint-config-prettier": "^5.1.0",
-    "stylelint-config-standard": "^18.3.0",
-    "git-cz": "^3.0.1"
+    "stylelint-config-standard": "^18.3.0"
   }
 }
