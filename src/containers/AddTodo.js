@@ -1,24 +1,29 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
 import { addTodo } from '../actions';
 
 const AddTodo = ({ dispatch }) => {
   let input;
-
   return (
     <div>
-      <form
-        onSubmit={(e) => {
+      <TextField
+        onChange={(e) => {
+          input = e.target.value;
+        }}
+      />
+      <Button
+        onClick={(e) => {
           e.preventDefault();
-          if (!input.value.trim()) {
+          if (!input.trim()) {
             return;
           }
-          dispatch(addTodo(input.value));
-          input.value = '';
+          dispatch(addTodo(input));
+          input = '';
         }}>
-        <input ref={(node) => (input = node)} />
-        <button type="submit">Add Todo</button>
-      </form>
+        Add Todo
+      </Button>
     </div>
   );
 };
