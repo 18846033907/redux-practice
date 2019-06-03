@@ -1,0 +1,72 @@
+{
+  "name": "gitflow_practice",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "less": "^3.9.0",
+    "path": "^0.12.7",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-scripts": "2.1.8"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject",
+    "release": "standard-version"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,md}": [
+      "prettier --write",
+      "git add",
+      "eslint"
+    ],
+    "src/**/*.{scss,css}": [
+      "stylelint --fix",
+      "prettier --write",
+      "git add",
+      "stylelint"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "config": {
+    "commitizen": {
+      "path": "git-cz"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@commitlint/cli": "^7.5.2",
+    "@commitlint/config-conventional": "^7.5.0",
+    "cz-conventional-changelog": "^2.1.0",
+    "babel-plugin-root-import": "^6.1.0",
+    "customize-cra": "^0.2.12",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.2.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-prettier": "^3.0.1",
+    "husky": "^2.1.0",
+    "less-loader": "^4.1.0",
+    "lint-staged": "^8.1.5",
+    "prettier": "^1.17.0",
+    "react-app-rewired": "^2.1.1",
+    "standard-version": "^5.0.2",
+    "stylelint": "^10.0.1",
+    "stylelint-config-prettier": "^5.1.0",
+    "stylelint-config-standard": "^18.3.0",
+    "git-cz": "^3.0.1"
+  }
+}
