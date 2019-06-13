@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
-import { addTodo } from '../actions';
+import { addTodo } from '../../actions';
 
 const AddTodo = ({ dispatch }) => {
   let input;

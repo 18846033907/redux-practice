@@ -15,6 +15,13 @@ export const toggleTodo = (id) => ({
   id,
 });
 
+export const DeNumber = () => ({
+  type: 'DENUMBER',
+});
+
+export const AddNumber = () => ({
+  type: 'ADDNUMBER',
+});
 export const VisibilityFilters = {
   SHOW_ALL: 'SHOW_ALL',
   SHOW_COMPLETED: 'SHOW_COMPLETED',

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import List from '@material-ui/core/List';
-import Todo from './Todo';
+import Todo from '../todo/Todo';
 
 const TodoList = ({ todos, toggleTodo }) => (
   <List>
